@@ -1,0 +1,12 @@
+@media screen and (max-width:767px) {
+    /*　画面サイズが767px以下の場合読み込む　*/
+    h1 { font-size:20pt;}
+    h2 { font-size:17pt;}
+    h3 { font-size:14pt;}
+}
+@media screen and (min-width:768px){
+    /*　画面サイズが768px以上の場合読み込む　*/
+    h1 { font-size:28pt;}
+    h2 { font-size:24pt;}
+    h3 { font-size:20pt;}
+}

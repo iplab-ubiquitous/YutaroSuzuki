@@ -10,3 +10,33 @@
     h2 { font-size:24pt;}
     h3 { font-size:20pt;}
 }
+
+h1.content1 {
+  /*background-color: #eeeeee;*/
+  padding: 10px;
+  margin: 5px;
+  /*text-align: center;*/
+}
+
+div.content1 {
+  background-color: #eeeeee;
+  padding: 10pt;
+  margin: 5pt;
+}
+
+div.content2 {
+  padding: 10pt;
+  margin: 5pt;
+}
+
+header.fixing {
+  margin-top: -12pt;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  color: #191970;
+  z-index: 1;
+  background-position: 0pt;
+  clear: both;
+  background-repeat: repeat-x;
+}

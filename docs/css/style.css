@@ -13,7 +13,8 @@
 
 h1.content1 {
   /*background-color: #eeeeee;*/
-  padding: 10px;
+  /*padding: 10px;*/
+  padding-left: 10px;
   margin: 5px;
   /*text-align: center;*/
 }
@@ -21,7 +22,7 @@ h1.content1 {
 div.content1 {
   background-color: #eeeeee;
   padding: 10pt;
-  margin: 5pt;
+  margin-right: 5pt;
 }
 
 div.content2 {
@@ -31,6 +32,8 @@ div.content2 {
 
 header.fixing {
   margin-top: -12pt;
+  margin-left: -15px;
+  padding: 10px;
   position: fixed;
   background-color: #ffffff;
   width: 100%;

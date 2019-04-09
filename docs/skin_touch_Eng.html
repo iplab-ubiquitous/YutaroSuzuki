@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BootstrapのCSS読み込み -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/fixing_sample.js"></script>
+
+		<meta charset="utf-8">
+		<title>Identifying Hand Gestures and Touch Positions on the Forearm through Electrical Impedance Method</title>
+		<meta name="description" content="">
+		<meta name="author" content="鈴木 雄太郎">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+  <body style="margin-top: 25px; margin-bottom: 25px;">
+    <div class="container-fluid">
+      <header>
+        <ul class="nav nav-tabs">
+  			     <li class="nav-item"><a href="skin_touch.html" class="nav-link">Japanese</a></li>
+  	 	       <li class="nav-item"><a href="skin_touch_Eng.html" class="nav-link active">English</a></li>
+  	    </ul>
+        <h1>Identifying Hand Gestures and Touch Positions on the Forearm through Electrical Impedance Method</h1>
+      </header>
+
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-lg-4">
+          <div class="content1">
+            <div class="thumbnails">
+
+              <h3>Touch position identification</h3>
+              <a href="img/touch.png" class="thumbnail"><img src="img/touch.png" class="img-fluid img-thumbnail" alt=""></a>
+
+              <h3 style="margin-top: 20px;">Hand gesture recognition</h3>
+              <a href="img/gesture.png" class="thumbnail"><img src="img/gesture.png" class="img-fluid img-thumbnail" alt=""></a>
+            </div>
+            <hr>
+            <h2>Publication</h2>
+            <ul>
+              <li><a href="https://sites.google.com/view/wristsense2019/">2019 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops)</a>. Kyoto. March, 2019.</li>
+            </ul>
+
+            <h2>Related work in IPLAB</h2>
+
+          </div>
+        </div>
+
+      <div class="col-lg-8">
+        <div class="content2">
+          <h2 style="margin-top: 10px;">Background</h2>
+
+          <p style="margin-top: 5px;">　The opoerations, for example character input, to small wearable devices such as smart watches are performed by touch input to the on-board touch screen. However, it is difficult for users to input by touching, since the objects in the screen become smaller. This is caused the fat finger problems that it is difficult for users to push apart objects smaller than user's finger. In order to solve those problems, human skins are thought as touch interfaces.</p>
+
+          <!--<p style="margin-top: 5px;">　皮膚表面を用いたタッチインタフェースは，以下の様に利用することが想定されている．ユーザは，スマートフォンなどに対して，皮膚をタッチインタフェースとしてアプリケーション選択や操作などを行う．これによって，ユーザとデバイスの距離が離れている状態や，デバイスがカバンやポケットの中にある状態における操作が可能となる．例えば，スマートフォンの遠隔操作による集合写真の撮影や，スマートフォンをポケットに入れたままの音楽プレイヤ操作などを行うことができる．また，スマートウォッチなどのウェアラブルデバイスに対して，皮膚表面をキーボードとしてキーボード入力，あるいは皮膚表面をコントローラとしてポインタ操作を行うことができる．</p>-->
+
+          <!--<p style="margin-top: 5px;">　皮膚表面におけるタッチセンシングに関する研究として，カメラ，赤外線センサ，静電容量センシング，音響センシング，または電界センシングなどの様々な技術的アプローチが提示されている．これらの研究は，センサを取り付ける位置などの問題や，タッチを検出可能である範囲が限定されているという問題，検出用の指輪をしている指でなければタッチを検出できないなどの問題がある．</p>-->
+
+
+          <h2 style="margin-top: 5px;">Purpose</h2>
+          <ul>
+            <li>Realizing input to the small wearable devices by touching the forearm and hand gestures</li>
+            <li>Identifying hand gestures and touch positions on the forearm</li>
+            <li>Using easily attachable sensors</li>
+          </ul>
+          <h2 style="margin-top: 5px;">Approach</h2>
+          <ul>
+            <li>Attaching the electrodes to surround the forearm</li>
+            <li>Measuring the voltages on each electrode based onthe electrical impedance method</li>
+            <li>Identifying touch positions and hand gesturesby machine learning technique</li>
+          </ul>
+          <p style="margin-top: 5px;">　The electrical impedance method is a technique of estimating the internal structure by utilizing the difference in electrical conductivity. Installing electrodes arround the target area, applying AC to a pair of adjacent electrodes, and measuring voltages at all of the other electrodes in turn. We can claasify touch positoins and hand gestures by machine learning technique since the measured voltages change caused by a shunt current based on touch events, or transformation of the internal stracture of the forearm based on hand gestures.</p>
+
+          <h2 style="margin-top: 10px;">Future work</h2>
+          <ul>
+            <li>The influence of the internal structure for the accuracy</li>
+            <li>Continuous touch tracking</li>
+            <li>Detecting the angles of elbow and wrist</li>
+            <li>Making a device attached electrodes</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>

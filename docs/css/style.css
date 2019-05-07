@@ -1,17 +1,4 @@
-@media screen and (max-width:767px) {
-    /*　画面サイズが767px以下の場合読み込む　*/
-    h1 { font-size:20pt;}
-    h2 { font-size:17pt;}
-    h3 { font-size:14pt;}
-}
-@media screen and (min-width:768px){
-    /*　画面サイズが768px以上の場合読み込む　*/
-    h1 { font-size:28pt;}
-    h2 { font-size:24pt;}
-    h3 { font-size:20pt;}
-}
-
-h1.content1 {
+.name {
   /*background-color: #eeeeee;*/
   /*padding: 10px;*/
   padding-left: 10px;
@@ -19,27 +6,31 @@ h1.content1 {
   /*text-align: center;*/
 }
 
-div.content1 {
-  background-color: #eeeeee;
+.content1 {
   padding: 10pt;
-  margin-right: 5pt;
+  border-right: solid 1px;
+  border-color: #DCDCDC;
 }
 
-div.content2 {
+.content2 {
   padding: 10pt;
-  margin: 5pt;
 }
 
-header.fixing {
-  margin-top: -12pt;
-  margin-left: -15px;
-  padding: 10px;
+header {
+  padding: 2px 10px;
   position: fixed;
   background-color: #ffffff;
   width: 100%;
   color: #191970;
   z-index: 1;
-  background-position: 0pt;
-  clear: both;
-  background-repeat: repeat-x;
+  top: 0;
+  left: 0;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-left {
+  float: left;
 }

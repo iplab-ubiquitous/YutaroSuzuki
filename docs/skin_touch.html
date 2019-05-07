@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- BootstrapのCSS読み込み -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-		<link href="./css/style.css" rel="stylesheet">
+		<link href="./css/study_style.css" rel="stylesheet">
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
@@ -20,73 +20,82 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
-  <body style="margin-top: 25px; margin-bottom: 25px;">
-    <div class="container-fluid">
-      <header>
-        <ul class="nav nav-tabs">
-  			     <li class="nav-item"><a href="skin_touch.html" class="nav-link active">日本語</a></li>
-  	 	       <li class="nav-item"><a href="skin_touch_Eng.html" class="nav-link">English</a></li>
-  	    </ul>
-        <h1>電気インピーダンス法を用いた前腕におけるタッチ位置及び手形状の識別</h1>
-      </header>
+  <body>
+    <header>
+      <ul class="nav nav-pills">
+			     <li class="nav-item"><a href="skin_touch.html" class="nav-link active">日本語</a></li>
+	 	       <li class="nav-item"><a href="skin_touch_Eng.html" class="nav-link">English</a></li>
+	    </ul>
+      <h1>電気インピーダンス法を用いた前腕におけるタッチ位置及び手形状の識別</h1>
+    </header>
 
-      <div class="row" style="margin-top: 10px;">
-        <div class="col-lg-4">
-          <div class="content1">
-            <div class="thumbnails">
-
-              <h3>タッチ検出の様子</h3>
-              <a href="img/touch.png" class="thumbnail"><img src="img/touch.png" class="img-fluid img-thumbnail" alt=""></a>
-
-              <h3 style="margin-top: 20px;">手形状識別の様子</h3>
-              <a href="img/gesture.png" class="thumbnail"><img src="img/gesture.png" class="img-fluid img-thumbnail" alt=""></a>
-            </div>
-            <hr>
-            <h2>発表済み学会</h2>
-            <ul>
-              <li><a href="https://sites.google.com/view/wristsense2019/">2019 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops)</a>. Kyoto. March, 2019.</li>
-            </ul>
-
-            <h2>IPLAB内の関連研究</h2>
-
-          </div>
+    <div class="background_img">
+      <div class="container-fluid row top-wrapper">
+        <div class="col-lg-4 thumbnail">
+          <h3>タッチ検出の様子</h3>
+          <a href="img/touch.png" class="thumbnail"><img src="img/touch.png" class="img-fluid img-thumbnail img" alt=""></a>
+          <h3 style="margin-top: 20px;">手形状識別の様子</h3>
+          <a href="img/gesture.png" class="thumbnail"><img src="img/gesture.png" class="img-fluid img-thumbnail img" alt=""></a>
         </div>
 
-      <div class="col-lg-8">
-        <div class="content2">
-          <h2 style="margin-top: 10px;">背景</h2>
+      <div class="col-lg-8 top-right">
+        <h2>背景</h2>
+        <p>　スマートウォッチのような小型ウェアラブルデバイスへの文字入力及び操作は，搭載されているタッチスクリーンへのタッチ入力によって行われる．しかし，画面内のボタンなどのオブジェクトが小さくなることから，タッチによる小型デバイスへの入力及びその操作はユーザに負担がかかる．例えば，自身の指よりも小さなオブジェクトは押し分けが困難であるというファットフィンガー問題を引き起こすことがある．このような小型デバイスへの入力が困難であるという問題を解決することを目的として，人間の皮膚表面をタッチインタフェース化する研究が行われている．皮膚表面は小型ウェアラブルデバイスと比較して，面積が広い．さらに皮膚表面は，スマートフォンなどと比較してカバンやポケットから取り出す必要がなく，常に利用可能かつ素早くアクセス可能である．</p>
 
-          <p style="margin-top: 5px;">　スマートウォッチのような小型ウェアラブルデバイスへの文字入力及び操作は，搭載されているタッチスクリーンへのタッチ入力によって行われる．しかし，画面内のボタンなどのオブジェクトが小さくなることから，タッチによる小型デバイスへの入力及びその操作はユーザに負担がかかる．例えば，自身の指よりも小さなオブジェクトは押し分けが困難であるというファットフィンガー問題を引き起こすことがある．このような小型デバイスへの入力が困難であるという問題を解決することを目的として，人間の皮膚表面をタッチインタフェース化する研究が行われている．皮膚表面は小型ウェアラブルデバイスと比較して，面積が広い．さらに皮膚表面は，スマートフォンなどと比較してカバンやポケットから取り出す必要がなく，常に利用可能かつ素早くアクセス可能である．</p>
+        <!--<p style="margin-top: 5px;">　皮膚表面を用いたタッチインタフェースは，以下の様に利用することが想定されている．ユーザは，スマートフォンなどに対して，皮膚をタッチインタフェースとしてアプリケーション選択や操作などを行う．これによって，ユーザとデバイスの距離が離れている状態や，デバイスがカバンやポケットの中にある状態における操作が可能となる．例えば，スマートフォンの遠隔操作による集合写真の撮影や，スマートフォンをポケットに入れたままの音楽プレイヤ操作などを行うことができる．また，スマートウォッチなどのウェアラブルデバイスに対して，皮膚表面をキーボードとしてキーボード入力，あるいは皮膚表面をコントローラとしてポインタ操作を行うことができる．</p>-->
 
-          <!--<p style="margin-top: 5px;">　皮膚表面を用いたタッチインタフェースは，以下の様に利用することが想定されている．ユーザは，スマートフォンなどに対して，皮膚をタッチインタフェースとしてアプリケーション選択や操作などを行う．これによって，ユーザとデバイスの距離が離れている状態や，デバイスがカバンやポケットの中にある状態における操作が可能となる．例えば，スマートフォンの遠隔操作による集合写真の撮影や，スマートフォンをポケットに入れたままの音楽プレイヤ操作などを行うことができる．また，スマートウォッチなどのウェアラブルデバイスに対して，皮膚表面をキーボードとしてキーボード入力，あるいは皮膚表面をコントローラとしてポインタ操作を行うことができる．</p>-->
+        <!--<p style="margin-top: 5px;">　皮膚表面におけるタッチセンシングに関する研究として，カメラ，赤外線センサ，静電容量センシング，音響センシング，または電界センシングなどの様々な技術的アプローチが提示されている．これらの研究は，センサを取り付ける位置などの問題や，タッチを検出可能である範囲が限定されているという問題，検出用の指輪をしている指でなければタッチを検出できないなどの問題がある．</p>-->
 
-          <!--<p style="margin-top: 5px;">　皮膚表面におけるタッチセンシングに関する研究として，カメラ，赤外線センサ，静電容量センシング，音響センシング，または電界センシングなどの様々な技術的アプローチが提示されている．これらの研究は，センサを取り付ける位置などの問題や，タッチを検出可能である範囲が限定されているという問題，検出用の指輪をしている指でなければタッチを検出できないなどの問題がある．</p>-->
+        <h2>目的</h2>
+        <ul>
+          <li>皮膚表面へのタッチ及び手形状による入力を実現すること</li>
+          <li>前腕におけるタッチ位置及び手形状を識別すること</li>
+          <li>容易に取り付け可能なセンサを用いること</li>
+        </ul>
 
+        <h2>アプローチ</h2>
+        <ul>
+          <li>前腕を囲うように電極を取り付ける</li>
+          <li>電気インピーダンス法に基づき電圧を測定する</li>
+          <li>測定したデータを用いた機械学習により識別する</li>
+        </ul>
+        <p>　電気インピーダンス法とは，電気伝導性の差異を利用して内部構造を予測する手法である．検出したい範囲の周囲に電極を設置し，電流の印加と電圧の測定を行うことによって内部構造を予測する．タッチに基づくシャント効果や，手形状の変化に基づく内部構造の変化などによって，測定される電圧が変化するため，機械学習による識別が可能となる．</p>
 
-          <h2 style="margin-top: 5px;">目的</h2>
-          <ul>
-            <li>皮膚表面へのタッチ及び手形状による入力を実現すること</li>
-            <li>前腕におけるタッチ位置及び手形状を識別すること</li>
-            <li>容易に取り付け可能なセンサを用いること</li>
-          </ul>
-          <h2 style="margin-top: 5px;">アプローチ</h2>
-          <ul>
-            <li>前腕を囲うように電極を取り付ける</li>
-            <li>電気インピーダンス法に基づき電圧を測定する</li>
-            <li>測定したデータを用いた機械学習により識別する</li>
-          </ul>
-          <p style="margin-top: 5px;">　電気インピーダンス法とは，電気伝導性の差異を利用して内部構造を予測する手法である．検出したい範囲の周囲に電極を設置し，電流の印加と電圧の測定を行うことによって内部構造を予測する．タッチに基づくシャント効果や，手形状の変化に基づく内部構造の変化などによって，測定される電圧が変化するため，機械学習による識別が可能となる．</p>
+        <h2>今後の展望</h2>
+        <ul>
+          <li>前腕の内部構造の精度に対する影響</li>
+          <li>連続的なタッチトラッキング</li>
+          <li>手首や肘の角度の検出</li>
+          <li>電極を取り付けたデバイスの作成</li>
+        </ul>
 
-          <h2 style="margin-top: 10px;">今後の展望</h2>
-          <ul>
-            <li>前腕の内部構造の精度に対する影響</li>
-            <li>連続的なタッチトラッキング</li>
-            <li>手首や肘の角度の検出</li>
-            <li>電極を取り付けたデバイスの作成</li>
-          </ul>
-
-        </div>
-      </div>
     </div>
+  </div>
+
+  <div class="container-fluid row">
+    <div class="col-lg-4">
+      <h2>研究者</h2>
+      <ul>
+        <li><a href="http://www.iplab.cs.tsukuba.ac.jp/~ysuzuki">鈴木 雄太郎</a></li>
+      </ul>
+      <!--<h2>IPLAB内の関連研究</h2>-->
+
     </div>
+    <div class="col-lg-8">
+      <h2>文献情報</h2>
+      <ul>
+        <li>
+         Yutaro Suzuki, Kodai Sekimori, Buntarou Shizuki, and Shin Takahashi<br>
+         <b>Touch Sensing on the Forearm Using the Electrical Impedance Method</b><a href="https://www.iplab.cs.tsukuba.ac.jp/paper/international/ysuzuki_wristsense2019.pdf"><img src="img/pdf.png" alt="" width=18 height=18></a><br>
+         2019 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops). Kyoto. March, 2019.
+        </li>
+        <li>鈴木 雄太郎<br>
+        <b>電気インピーダンス法を用いた前腕におけるタッチ位置及び手形状の識別</b><a href="https://www.iplab.cs.tsukuba.ac.jp/paper/bachelor/ysuzuki_bachelor.pdf"><img src="img/pdf.png" alt="" width=18 height=18></a><br>
+        筑波大学卒業論文
+        </li>
+      </ul>
+
+    </div>
+  </div>
   </body>
+</html>

@@ -7,6 +7,7 @@
 		<!-- BootstrapのCSS読み込み -->
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
 		<link href="./css/style.css" rel="stylesheet">
+		<link href="./css/screensize.css" rel="stylesheet">
 		<!-- jQuery読み込み -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!-- BootstrapのJS読み込み -->
@@ -20,22 +21,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
-	<body style="margin-top: 0px; margin-bottom: 25px;">
-		<div class="container-fluid">
-			<header class="fixing">
-				<ul class="nav nav-tabs">
-  			     <li class="nav-item"><a href="index.html" class="nav-link">Japanese</a></li>
-  	 	       <li class="nav-item"><a href="index_Eng.html" class="nav-link active">English</a></li>
-  	    </ul>
-		   <h1 class="content1">Yutaro Suzuki</h1>
-		 </header>
-	   <hr>
-	   <div class="row" style="margin-top: 90px;">
-		   <div class="col-lg-4">
-				 <div class="content1">
-			   <div class="thumbnails">
-					   <a href="img/suzuki_prof_e.jpg" class="thumbnail"><img src="img/suzuki_prof_e.jpg" class="img-fluid img-thumbnail" alt=""></a>
-				   </div>
+	<body>
+		<header>
+			<div class="container-fluid">
+				<div class="header-right">
+					<ul class="nav nav-tabs">
+							 <li class="nav-item"><a href="index.html" class="nav-link">日本語</a></li>
+							 <li class="nav-item"><a href="index_Eng.html" class="nav-link active">English</a></li>
+					</ul>
+				</div>
+				<div class="header-left">
+					<h1 class="name"><small class="text-muted">鈴木 雄太郎 |</small> Yutaro Suzuki</h1>
+				</div>
+			</div>
+		</header>
+
+	   <div class="container-fluid row background_img">
+			 <div class="col-lg-4 content1">
+				 <div class="thumbnails">
+				   <img src="img/suzuki_prof_e.jpg" class="img-fluid img-thumbnail" alt="">
+			   </div>
 			   <hr>
 			   <h2>Affiliation</h2>
 			   <ul>
@@ -51,10 +56,8 @@
 				 <a href="mailto:ysuzuki@iplab.cs.tsukuba.ac.jp"><img src="img/gmail.png" alt="" width=18 height=18> ysuzuki[AT]iplab.cs.tsukuba.ac.jp</a><br>
 				 <a href="https://github.com/yutaro-suzuki"><img src="img/github.png" alt="" width=18 height=18 /> yutaro-suzuki</a>
 			 </div>
-		 </div>
 
-		   <div class="col-lg-8">
-				  <div class="content2">
+		   <div class="col-lg-8 content2">
 				 <h2>Publication</h2>
 				 <h3>Refereed Conference Papers</h3>
 				 <ul>
@@ -88,6 +91,6 @@
 			   </ul>
 			   <hr>
 			 </div>
-		   </div>
 	   </div>
-		</div>
+	</body>
+</html>

@@ -7,6 +7,7 @@
     <!-- BootstrapのCSS読み込み -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 		<link href="./css/style.css" rel="stylesheet">
+    <link href="./css/screensize.css" rel="stylesheet">
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
@@ -20,44 +21,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
-	<body style="margin-top: 0px; margin-bottom: 25px;">
-		<div class="container-fluid">
-      <header class="fixing">
-  			<ul class="nav nav-tabs">
-  			     <li class="nav-item"><a href="index.html" class="nav-link active">日本語</a></li>
-  	 	       <li class="nav-item"><a href="index_Eng.html" class="nav-link">English</a></li>
-  	    </ul>
-        <h1 class="content1">鈴木 雄太郎<small class="text-muted"> | Yutaro Suzuki</small></h1>
-
-      </header>
-	   <!--<h1 class="content1">鈴木 雄太郎
-			 <small class="text-muted">| Yutaro Suzuki</small>
-		 </h1>-->
-     <hr>
-	   <div class="row" style="margin-top: 90px;">
-		   <div class="col-lg-4">
-         <div class="content1">
-  			   <div class="thumbnails">
-  					   <a href="img/suzuki_prof.jpg" class="thumbnail"><img src="img/suzuki_prof.jpg" class="img-fluid img-thumbnail" alt=""></a>
-  				   </div>
-  			   <hr>
-  			   <h2>所属</h2>
-  			   <ul>
-  				   <li><a href="https://www.cs.tsukuba.ac.jp/">筑波大学大学院 システム情報工学研究科<br>コンピュータサイエンス専攻</a> 博士前期課程1年</li>
-  				   <li><a href="https://www.iplab.cs.tsukuba.ac.jp/">インタラクティブプログラミング研究室(IPLAB) </a> UBIQUITOUSチーム</li>
-  			   </ul>
-  				 <h2>学会</h2>
-  				 <ul>
-  					<li><a href="https://www.ieee.org">IEEE</a> 学生会員</li>
-  				 </ul>
-  			   <h2>連絡先</h2>
-  				 <a href="mailto:ysuzuki@iplab.cs.tsukuba.ac.jp"><img src="img/gmail.png" alt="" width=18 height=18> ysuzuki[AT]iplab.cs.tsukuba.ac.jp</a><br>
-  				 <a href="https://github.com/yutaro-suzuki"><img src="img/github.png" alt="" width=18 height=18 /> yutaro-suzuki</a>
-  			 </div>
+	<body>
+    <header>
+      <div class="container-fluid">
+        <div class="header-right">
+    			<ul class="nav nav-tabs">
+    			     <li class="nav-item"><a href="index.html" class="nav-link active">日本語</a></li>
+    	 	       <li class="nav-item"><a href="index_Eng.html" class="nav-link">English</a></li>
+    	    </ul>
         </div>
+        <div class="header-left">
+          <h1 class="name">鈴木 雄太郎<small class="text-muted"> | Yutaro Suzuki</small></h1>
+        </div>
+      </div>
+    </header>
 
-		   <div class="col-lg-8">
-         <div class="content2">
+   <!--<div class="container-fluid" style="margin-top: 95px">-->
+     <div class="container-fluid row background_img">
+		   <div class="col-lg-4 content1">
+			   <div class="thumbnails">
+					   <img src="img/suzuki_prof.jpg" class="img-fluid img-thumbnail" alt="">
+				 </div>
+			   <hr>
+			   <h2>所属</h2>
+			   <ul>
+				   <li><a href="https://www.cs.tsukuba.ac.jp/">筑波大学大学院 システム情報工学研究科<br>コンピュータサイエンス専攻</a> 博士前期課程1年</li>
+				   <li><a href="https://www.iplab.cs.tsukuba.ac.jp/">インタラクティブプログラミング研究室(IPLAB) </a> UBIQUITOUSチーム</li>
+			   </ul>
+				 <h2>学会</h2>
+				 <ul>
+					<li><a href="https://www.ieee.org">IEEE</a> 学生会員</li>
+				 </ul>
+			   <h2>連絡先</h2>
+				 <a href="mailto:ysuzuki@iplab.cs.tsukuba.ac.jp"><img src="img/gmail.png" alt="" width=18 height=18> ysuzuki[AT]iplab.cs.tsukuba.ac.jp</a><br>
+				 <a href="https://github.com/yutaro-suzuki"><img src="img/github.png" alt="" width=18 height=18 /> yutaro-suzuki</a>
+			 </div>
+
+		   <div class="col-lg-8 content2">
   				 <h2>文献情報</h2>
   				 <h3>国際会議（査読付き）</h3>
   				 <ul>
@@ -109,7 +109,6 @@
   			 	 </ul>
   				 <hr>
 
-
   			   <h2>略歴</h2>
   			   <ul>
   				   <li>2012年(平成24年) 4月 桐朋高等学校 入学</li>
@@ -119,7 +118,7 @@
   					 <li>2019年(平成31年) 4月 筑波大学大学院 システム情報工学研究科 コンピュータサイエンス専攻 入学</li>
   			   </ul>
   			   <hr>
-         </div>
-		   </div>
+       </div>
 	   </div>
-		</div>
+  </body>
+</html>

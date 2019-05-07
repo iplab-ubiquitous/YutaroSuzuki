@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- BootstrapのCSS読み込み -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-		<link href="./css/style.css" rel="stylesheet">
+		<link href="./css/study_style.css" rel="stylesheet">
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
@@ -20,48 +20,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
-  <body style="margin-top: 25px; margin-bottom: 25px;">
-    <div class="container-fluid">
-      <header>
-        <ul class="nav nav-tabs">
-  			     <li class="nav-item"><a href="skin_touch.html" class="nav-link">Japanese</a></li>
-  	 	       <li class="nav-item"><a href="skin_touch_Eng.html" class="nav-link active">English</a></li>
-  	    </ul>
-        <h1>Identifying Hand Gestures and Touch Positions on the Forearm through Electrical Impedance Method</h1>
-      </header>
+  <body>
+    <header>
+      <ul class="nav nav-pills">
+			     <li class="nav-item"><a href="skin_touch.html" class="nav-link">日本語</a></li>
+	 	       <li class="nav-item"><a href="skin_touch_Eng.html" class="nav-link active">English</a></li>
+	    </ul>
+      <h1>Identifying Hand Gestures and Touch Positions on the Forearm through Electrical Impedance Method</h1>
+    </header>
 
-      <div class="row" style="margin-top: 10px;">
-        <div class="col-lg-4">
-          <div class="content1">
-            <div class="thumbnails">
-
-              <h3>Touch position identification</h3>
-              <a href="img/touch.png" class="thumbnail"><img src="img/touch.png" class="img-fluid img-thumbnail" alt=""></a>
-
-              <h3 style="margin-top: 20px;">Hand gesture recognition</h3>
-              <a href="img/gesture.png" class="thumbnail"><img src="img/gesture.png" class="img-fluid img-thumbnail" alt=""></a>
-            </div>
-            <hr>
-            <h2>Publication</h2>
-            <ul>
-              <li><a href="https://sites.google.com/view/wristsense2019/">2019 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops)</a>. Kyoto. March, 2019.</li>
-            </ul>
-
-            <h2>Related work in IPLAB</h2>
-
-          </div>
+    <div class="background_img">
+      <div class="container-fluid row top-wrapper">
+        <div class="col-lg-4 thumbnail">
+            <h3>Touch position identification</h3>
+            <a href="img/touch.png" class="thumbnail"><img src="img/touch.png" class="img-fluid img-thumbnail" alt=""></a>
+            <h3 style="margin-top: 20px;">Hand gesture recognition</h3>
+            <a href="img/gesture.png" class="thumbnail"><img src="img/gesture.png" class="img-fluid img-thumbnail" alt=""></a>
         </div>
 
-      <div class="col-lg-8">
-        <div class="content2">
+        <div class="col-lg-8">
           <h2 style="margin-top: 10px;">Background</h2>
 
           <p style="margin-top: 5px;">　The opoerations, for example character input, to small wearable devices such as smart watches are performed by touch input to the on-board touch screen. However, it is difficult for users to input by touching, since the objects in the screen become smaller. This is caused the fat finger problems that it is difficult for users to push apart objects smaller than user's finger. In order to solve those problems, human skins are thought as touch interfaces.</p>
-
-          <!--<p style="margin-top: 5px;">　皮膚表面を用いたタッチインタフェースは，以下の様に利用することが想定されている．ユーザは，スマートフォンなどに対して，皮膚をタッチインタフェースとしてアプリケーション選択や操作などを行う．これによって，ユーザとデバイスの距離が離れている状態や，デバイスがカバンやポケットの中にある状態における操作が可能となる．例えば，スマートフォンの遠隔操作による集合写真の撮影や，スマートフォンをポケットに入れたままの音楽プレイヤ操作などを行うことができる．また，スマートウォッチなどのウェアラブルデバイスに対して，皮膚表面をキーボードとしてキーボード入力，あるいは皮膚表面をコントローラとしてポインタ操作を行うことができる．</p>-->
-
-          <!--<p style="margin-top: 5px;">　皮膚表面におけるタッチセンシングに関する研究として，カメラ，赤外線センサ，静電容量センシング，音響センシング，または電界センシングなどの様々な技術的アプローチが提示されている．これらの研究は，センサを取り付ける位置などの問題や，タッチを検出可能である範囲が限定されているという問題，検出用の指輪をしている指でなければタッチを検出できないなどの問題がある．</p>-->
-
 
           <h2 style="margin-top: 5px;">Purpose</h2>
           <ul>
@@ -85,8 +65,24 @@
             <li>Making a device attached electrodes</li>
           </ul>
 
-        </div>
       </div>
     </div>
+
+    <div class="container-fluid row">
+      <div class="col-lg-4">
+        <h2>Researcher</h2>
+        <ul>
+          <li><a href="http://www.iplab.cs.tsukuba.ac.jp/~ysuzuki">Yutaro Suzuki</a></li>
+        </ul>
+        <!--<h2>IPLAB内の関連研究</h2>-->
+
+      </div>
+      <div class="col-lg-8">
+        <h2>Publication</h2>
+        <ul>
+          <li><a href="https://sites.google.com/view/wristsense2019/">2019 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops)</a>. Kyoto. March, 2019.</li>
+        </ul>
+
+      </div>
     </div>
   </body>

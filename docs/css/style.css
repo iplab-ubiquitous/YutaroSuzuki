@@ -9,7 +9,7 @@
 .content1 {
   padding: 10pt;
   border-right: solid 1px;
-  border-color: #DCDCDC;
+  border-color: #dcdcdc;
 }
 
 .content2 {
@@ -31,6 +31,17 @@ header {
   float: right;
 }
 
+.researcher {
+  padding: auto;
+}
+
 .header-left {
   float: left;
+}
+
+.background_img {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

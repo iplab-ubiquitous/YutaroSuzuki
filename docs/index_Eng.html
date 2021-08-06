@@ -10,151 +10,390 @@
     <link href="./css/screensize.css" rel="stylesheet" />
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
     <!-- BootstrapのJS読み込み -->
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/fixing_sample.js"></script>
+    <script src="./js/script.js"></script>
 
     <meta charset="utf-8" />
-    <title>Yutaro Suzuki</title>
+    <title>鈴木 雄太郎 | Yutaro Suzuki</title>
     <meta name="description" content="" />
-    <meta name="author" content="鈴木 雄太郎" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Yutaro Suzuki" />
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="header-right">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">日本語</a>
-            </li>
-            <li class="nav-item">
-              <a href="index_Eng.html" class="nav-link active">English</a>
-            </li>
-          </ul>
-        </div>
+    <header id="header" class="header">
+      <div class="container header-container">
         <div class="header-left">
-          <h1 class="name">
-            <small class="text-muted">鈴木 雄太郎 |</small> Yutaro Suzuki
-          </h1>
+          <span>
+            <a href="index.html">
+              <h1 class="muted-name">
+                <small>鈴木 雄太郎 | </small>
+              </h1>
+            </a>
+          </span>
+          <span>
+            <a href="index_Eng.html">
+              <h1 class="name">Yutaro Suzuki</h1>
+            </a>
+          </span>
+        </div>
+        <div class="header-right">
+          <div>
+            <a href="#papers">Publication</a>
+          </div>
+          <div class="nav-divider">|</div>
+          <div>
+            <a href="#researches">Research</a>
+          </div>
+          <div class="nav-divider">|</div>
+          <div>
+            <a href="#history">Biography</a>
+          </div>
         </div>
       </div>
     </header>
 
     <div class="background_img">
-      <div class="container row">
+      <div class="container row content">
         <div class="col-lg-4 content1">
-          <div class="thumbnails">
+          <div class="thumbnails section">
             <img
-              src="img/suzuki_prof_e.jpg"
+              src="img/suzuki_prof.jpg"
               class="img-fluid img-thumbnail"
               alt=""
             />
           </div>
-          <hr />
-          <h3>Affiliation</h3>
-          <ul>
-            <li>
-              <a href="https://www.cs.tsukuba.ac.jp/"
-                >Graduate School of Systems and Information Engineering,
-                Department of Computer Science, University of Tsukuba</a
-              >
-            </li>
-            <li>
-              <a href="https://www.iplab.cs.tsukuba.ac.jp/">IPLAB </a>
-              UBIQUITOUS Team
-            </li>
-          </ul>
-
-          <h3>Society</h3>
-          <ul>
-            <li><a href="https://www.ieee.org">IEEE</a> student membership</li>
-          </ul>
-          <h3>Contact</h3>
-          <a href="mailto:ysuzuki@iplab.cs.tsukuba.ac.jp"
-            ><img src="img/gmail.png" alt="" width="18" height="18" />
-            ysuzuki[AT]iplab.cs.tsukuba.ac.jp</a
-          ><br />
-          <a href="https://github.com/yutaro-suzuki"
-            ><img src="img/github.png" alt="" width="18" height="18" />
-            yutaro-suzuki</a
-          >
+          <div class="section">
+            <h3 class="title">Affiliation<small> (~ March 2021)</small></h3>
+            <div class="item">
+              <div style="line-height: 110%; margin-bottom: 10px;">
+                <a href="https://www.cs.tsukuba.ac.jp/">
+                  Graduate School of Systems and Information Engineering,
+                  Department of Computer Science, University of Tsukuba
+                </a>
+              </div>
+              <div style="line-height: 110%;">
+                <a href="https://www.iplab.cs.tsukuba.ac.jp/">
+                  IPLAB
+                </a>
+                UBIQUITOUS Team
+              </div>
+            </div>
+          </div>
+          <div id="history" class="section">
+            <h3 class="title">Biography</h3>
+            <div class="item">
+              <div class="list-item">
+                <img src="img/south.png" alt="" width="18" height="auto" />
+                <div class="list-item-with-secondary">
+                  Toho High School
+                  <small class="secondary-text">[2012.4 - 2015.3]</small>
+                </div>
+              </div>
+              <div class="list-item">
+                <img src="img/south.png" alt="" width="18" height="auto" />
+                <div class="list-item-with-secondary">
+                  College of Information Science, Science and Technology, School
+                  of Informatics, University of Tsukuba
+                  <small class="secondary-text">[2015.4 - 2019.3]</small>
+                </div>
+              </div>
+              <div class="list-item">
+                <img src="img/south.png" alt="" width="18" height="auto" />
+                <div class="list-item-with-secondary">
+                  Graduate School of Systems and Information Engineering,
+                  Department of Computer Science, University of Tsukuba
+                  <small class="secondary-text">[2019.4 - 2021.3]</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-8 content2">
-          <h3>Publication</h3>
-          <h4>Refereed Conference Papers</h4>
-          <ul>
-            <li>
-              <u>Yutaro Suzuki</u>, Kodai Sekimori, Buntarou Shizuki, and Shin
-              Takahashi<br />
-              <b
-                >Touch Sensing on the Forearm Using the Electrical Impedance
-                Method</b
-              ><a
-                href="https://www.iplab.cs.tsukuba.ac.jp/paper/international/ysuzuki_wristsense2019.pdf"
-                ><img src="img/pdf.png" alt="" width="18" height="18"/></a
-              ><br />
-              2019 IEEE International Conference on Pervasive Computing and
-              Communications Workshops (PerCom Workshops). pp.255-260. Kyoto.
-              March, 2019.
-            </li>
-            <li>
-              <u>Yutaro Suzuki</u>, Kodai Sekimori, Yuki Yamato, Yusuke Yamasaki, Buntarou Shizuki, and Shin Takahashi<br />
-              <b>A Mouth Gesture Interface Featuring a Mutual-Capacitance Sensor Embedded in a Surgical Mask</b><br />
-              Proceedings of 22nd International Conference on Human-Computer Interaction (HCI International 2020), Springer (To appear)
-            </li>
-            <li>
-              Yuki Yamato, <u>Yutaro Suzuki</u>, Kodai Sekimori, Buntarou
-              Shizuki, and Shin Takahashi<br />
-              <b
-                >Hand Gesture Interaction with a Low-Resolution Infrared Image
-                Sensor on an Inner Wrist</b
-              ><br />
-              Proceedings of the 2020 International Conference on Advanced
-              Visual Interfaces (AVI '20) (To appear).
-            </li>
-          </ul>
+          <div id="papers" class="section">
+            <h3 class="title">Publication</h3>
+            <h4 class="subtitle">Refereed Conference Papers</h4>
+            <div class="papers">
+              <div class="paper">
+                <div class="paper-title">
+                  <a
+                    href="https://www.iplab.cs.tsukuba.ac.jp/paper/international/ysuzuki_wristsense2019.pdf"
+                  >
+                    <img src="img/pdf.png" alt="" width="18" height="auto" />
+                  </a>
+                  <b>
+                    Touch Sensing on the Forearm Using the Electrical Impedance
+                    Method
+                  </b>
+                </div>
+                <div class="authors">
+                  <div class="tag paper-tag">
+                    authors
+                  </div>
+                  <span>
+                    <u>Yutaro Suzuki</u>, Kodai Sekimori, Buntarou Shizuki, and
+                    Shin Takahashi
+                  </span>
+                </div>
+                <div class="conference">
+                  <div class="tag paper-tag">
+                    conference
+                  </div>
+                  2019 IEEE International Conference on Pervasive Computing and
+                  Communications Workshops (PerCom Workshops). Kyoto. March,
+                  2019.
+                </div>
+                <div class="doi">
+                  <small>
+                    Suzuki, Y., Sekimori, K., Shizuki, B., & Takahashi, S.
+                    (2019, March). Touch sensing on the forearm using the
+                    electrical impedance method. In 2019 IEEE International
+                    Conference on Pervasive Computing and Communications
+                    Workshops (PerCom Workshops) (pp. 255-260). IEEE.
+                  </small>
+                </div>
+              </div>
+              <div class="paper">
+                <h6 class="paper-title">
+                  <a
+                    href="https://www.iplab.cs.tsukuba.ac.jp/paper/international/suzuki_hcii2020.pdf"
+                  >
+                    <img src="img/pdf.png" alt="" width="18" height="auto" />
+                  </a>
+                  <b>
+                    A Mouth Gesture Interface Featuring a Mutual-Capacitance
+                    Sensor Embedded in a Surgical Mask
+                  </b>
+                </h6>
+                <div class="authors">
+                  <div class="tag paper-tag">
+                    authors
+                  </div>
+                  <span>
+                    <u>Yutaro Suzuki</u>, Kodai Sekimori, Yuki Yamato, Yusuke
+                    Yamasaki, Buntarou Shizuki, and Shin Takahashi
+                  </span>
+                </div>
+                <div class="conference">
+                  <div class="tag paper-tag">
+                    conference
+                  </div>
+                  Proceedings of 22nd International Conference on Human-Computer
+                  Interaction (HCI International 2020), Springer. Multimodal and
+                  Natural Interaction.
+                </div>
+                <div class="doi">
+                  <small>
+                    Suzuki, Y., Sekimori, K., Yamato, Y., Yamasaki, Y., Shizuki,
+                    B., & Takahashi, S. (2020, July). A Mouth Gesture Interface
+                    Featuring a Mutual-Capacitance Sensor Embedded in a Surgical
+                    Mask. In International Conference on Human-Computer
+                    Interaction (pp. 154-165). Springer, Cham.
+                  </small>
+                </div>
+              </div>
+              <div class="paper">
+                <h6 class="paper-title">
+                  <a
+                    href="https://www.iplab.cs.tsukuba.ac.jp/paper/international/yamato_avi2020.pdf"
+                  >
+                    <img src="img/pdf.png" alt="" width="18" height="auto" />
+                  </a>
+                  <b>
+                    Hand Gesture Interaction with a Low-Resolution Infrared
+                    Image Sensor on an Inner Wrist
+                  </b>
+                </h6>
+                <div class="authors">
+                  <div class="tag paper-tag">
+                    authors
+                  </div>
+                  <span>
+                    Yuki Yamato, <u>Yutaro Suzuki</u>, Kodai Sekimori, Buntarou
+                    Shizuki, and Shin Takahashi
+                  </span>
+                </div>
+                <div class="conference">
+                  <div class="tag paper-tag">
+                    conference
+                  </div>
+                  Proceedings of the 2020 International Conference on Advanced
+                  Visual Interfaces (AVI '20) Association for Computing
+                  Machinery, New York, NY, USA.
+                </div>
+                <div class="doi">
+                  <small>
+                    Yamato, Y., Suzuki, Y., Sekimori, K., Shizuki, B., &
+                    Takahashi, S. (2020, September). Hand Gesture Interaction
+                    with a Low-Resolution Infrared Image Sensor on an Inner
+                    Wrist. In Proceedings of the International Conference on
+                    Advanced Visual Interfaces (pp. 1-5).
+                  </small>
+                </div>
+              </div>
+            </div>
 
-          <h4>Bachelor thesis</h4>
-          <ul>
-            <li>
-              <u>Yutaro Suzuki</u><br />
-              <b
-                >Identification Hand Gestures and Touch Positions on the Forearm
-                through Electrical Impedance Method</b
-              >
-            </li>
-          </ul>
-          <hr />
+            <h4 class="subtitle">Dissertation</h4>
+            <div class="papers">
+              <div class="paper">
+                <div class="paper-title">
+                  <a
+                    href="https://www.iplab.cs.tsukuba.ac.jp/paper/bachelor/ysuzuki_bachelor.pdf"
+                  >
+                    <img src="img/pdf.png" alt="" width="18" height="auto" />
+                  </a>
+                  <b>
+                    Identification Hand Gestures and Touch Positions on the
+                    Forearm through Electrical Impedance Method (in Japanese)
+                  </b>
+                </div>
+                <div class="conference">
+                  Bachelor thesis
+                </div>
+                <div class="doi">
+                  <small>
+                    鈴木雄太郎.
+                    電気インピーダンス法を用いた前腕におけるタッチ位置および手形状の識別.
+                    筑波大学, 2018, 卒業論文.
+                  </small>
+                </div>
+              </div>
+              <div class="paper">
+                <div class="paper-title">
+                  <a
+                    href="https://www.iplab.cs.tsukuba.ac.jp/paper/master/suzuki_master.pdf"
+                  >
+                    <img src="img/pdf.png" alt="" width="18" height="auto" />
+                  </a>
+                  <b>
+                    Augmenting Single-Finger Input Vocabulary for Smartphones
+                    with Simultaneous Finger and Gaze Flicks (in Japanese)
+                  </b>
+                </div>
+                <div class="conference">
+                  Master thesis
+                </div>
+                <div class="doi">
+                  <small>
+                    鈴木雄太郎.
+                    フリックと視線移動の組み合わせによるスマートフォンの操作拡張.
+                    筑波大学, 2020, 修士論文.
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <h3>Research</h3>
-          <ul>
-            <li>
-              <a href="skin_touch.html"
-                >Identifying Hand Gestures and Touch Positions on the Forearm
-                through Electrical Impedance Method</a
-              ><br />
-            </li>
-          </ul>
-          <hr />
-
-          <h3>Biography</h3>
-          <ul>
-            <li>[2012.4 - 2015.3] Toho High School</li>
-            <li>
-              [2015.4 - 2019.3] College of Information Science, Science and
-              Technology, School of Informatics, University of Tsukuba
-            </li>
-            <li>
-              [2019.4 - ] Graduate School of Systems and Information
-              Engineering, Department of Computer Science, University of Tsukuba
-            </li>
-          </ul>
-          <hr />
+          <div id="researches" class="section">
+            <h3 class="title">Researches</h3>
+            <div class="item">
+              <div class="research">
+                <div class="research-title">
+                  <b
+                    >Identification of touch position on forearm using the
+                    EIM</b
+                  >
+                </div>
+                <div class="detail">
+                  <img src="img/touch.png" alt="" width="auto" height="150" />
+                  <div class="description">
+                    This study aims to identify the touch position on the
+                    forearm using the electrical impedance method. The proposed
+                    method enables users to input data to a smartwatch by
+                    touching their forearm. As a prototype, we developed an
+                    electronic circuit for measuring the electrical impedance
+                    using electrodes and a microcontroller for a biological
+                    surface, and identification software using SVM in Python.
+                  </div>
+                </div>
+              </div>
+              <div class="research">
+                <div class="research-title">
+                  <b
+                    >A Hands-Free Input Method Using a Mask-Type Interface Based
+                    on Mouth Movements</b
+                  >
+                </div>
+                <div class="detail">
+                  <img
+                    src="img/mask_img.png"
+                    alt=""
+                    width="auto"
+                    height="150"
+                  />
+                  <div class="description">
+                    In this study, we propose a new input method using a
+                    mask-type interface for mobile terminals in situations where
+                    hand or voice input is difficult, such as in a crowded
+                    train. This method can be used in public places because it
+                    does not require hand or voice input. By using conductive
+                    yarn as the sensor, it can be realized as an inexpensive
+                    disposable mask. In this study, we implemented a mask-type
+                    interface by attaching capacitive sensors to the mask.
+                  </div>
+                </div>
+              </div>
+              <div class="research">
+                <div class="research-title">
+                  <b
+                    >Smartphone operation combined with flicking and eye
+                    movement</b
+                  >
+                </div>
+                <div class="detail">
+                  <img src="img/FGFlick.png" alt="" width="180" height="auto" />
+                  <div class="description">
+                    We propose a new input method for smartphones that combines
+                    flicking and eye movement. In this study, we propose a new
+                    input method for smartphones that combines flicking and eye
+                    movement. We propose a new input method for smartphones
+                    using a combination of flicking and eye movement, which
+                    allows the user to perform operations such as pinch-in as an
+                    alternative to multi-touch gestures even when operating with
+                    one hand. In addition, it is possible to perform operations
+                    such as using physical buttons and bezels without changing
+                    the grasping posture. To achieve this, we implemented a gaze
+                    estimation system using a smart phone and investigated its
+                    performance.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="icons">
+          <div class="icon-container">
+            <a href="mailto:ysuzuki@iplab.cs.tsukuba.ac.jp">
+              <img src="img/gmail.png" alt="" width="auto" height="25" />
+            </a>
+          </div>
+          <div class="icon-container">
+            <a href="https://github.com/yutaro-suzuki">
+              <img src="img/github.png" alt="" width="auto" height="25" />
+            </a>
+          </div>
+          <div class="icon-container">
+            <a href="https://twitter.com/yuzuri414">
+              <img src="img/twitter.png" alt="" width="auto" height="25" />
+            </a>
+          </div>
+        </div>
+        <div class="text">
+          <small>Modified: 2021-08-07</small>
+          <small>Created by Yutaro Suzuki.</small>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

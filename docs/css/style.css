@@ -188,7 +188,8 @@
   padding: 2px;
   background-color: #f8e58c;
   box-shadow: 1px 1px 4px -2px gray;
-  min-width: 80px;
+  min-width: 90px;
+  white-space: nowrap;
 }
 
 .paper-tag {
